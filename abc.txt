@@ -1,0 +1,201 @@
+experiment 2
+AIM
+To understand Version Control System / Source Code Management, install git and create a GitHub account.
+PROBLEM DEFINITION
+Learn about version control systems and source code management by setting up Git and creating a GitHub account.
+THEORY
+Git is a free and open-source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is easy to learn and has a tiny footprint with lightning-fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.
+CONCLUSION 
+Thus, we understood the Version Control System and Source Code Management by installing Git and creating a GitHub account, which facilitated efficient code management and collaboration.
+
+experiment 3
+AIM
+To perform various GIT operations on local and remote repositories using GIT Cheat-Sheet 4.
+PROBLEM DEFINITION
+Execute various Git operations on local and remote repositories with the help of a Git cheat sheet.
+THEORY
+What is Git?
+Popular Version Control: Git is the most widely used modern version control system, created in 2005 by Linus Torvalds.
+Distributed Architecture: Unlike centralized systems like SVN, every developer's copy contains the full version history.
+Performance & Flexibility: Git ensures fast, secure, and flexible development with both local and remote repositories.
+Widely Supported: Git works across various operating systems, IDEs, and is essential for open-source and commercial projects.
+CONCLUSION 
+Therefore, performing various Git operations on local and remote repositories using Git Cheat Sheets enabled effective code management and version control.
+
+
+SEQUENCE FOR 2ND EXP
+git init
+git status
+git add . OR git add -A
+git status
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+git commit -m "any message"
+git remote add origin <repo link>
+git remote -v
+git push origin master
+git clone <repo link>
+git pull origin master
+
+//perform any other commands after these for exp3
+
+
+### Git Configuration & Setup
+git --version
+Verifies the installed Git version.
+
+git config --global user.name "Your Name"
+Sets the global username for commits.
+
+git config --global user.email "your.email@example.com"
+Sets the global email address for commits.
+
+git config --list
+Displays the current Git configuration.
+
+
+
+### Repository Management
+git init
+Initializes a new Git repository.
+
+git clone <repository_url>
+Clones an existing repository from a remote URL.
+
+git remote -v
+Lists configured remote repositories.
+
+
+
+### Staging and Committing Changes
+
+git status
+Shows the status of the working directory and staged changes.
+
+git add <file_name>
+Stages a specific file for the next commit.
+
+git add .
+Stages all changes (new, modified, or deleted files).
+
+git commit -m "Commit message"
+Commits staged changes with a descriptive message.
+
+git commit --amend
+Edits the last commit (useful for fixing commit messages).
+
+
+
+### Branching and Merging
+
+git branch
+Lists all branches in the repository.
+
+git branch <branch_name>
+Creates a new branch.
+
+git checkout <branch_name>
+Switches to the specified branch.
+
+git checkout -b <new_branch_name>
+Creates and switches to a new branch.
+
+git merge <branch_name>
+Merges the specified branch into the current branch.
+
+git branch -d <branch_name>
+Deletes the specified branch locally.
+
+
+
+### Pushing and Pulling Changes
+
+git push origin <branch_name>
+Pushes local commits to the remote branch.
+
+git push
+Pushes all local branches to their corresponding remote branches.
+
+git pull
+Fetches and merges changes from the remote branch.
+
+git fetch
+Downloads updates from the remote repository without merging.
+
+
+
+### Tracking Changes & Comparing Versions
+
+git log
+Displays commit history.
+
+git log --oneline
+Shows a compact commit history with one-line summaries.
+
+git diff
+Shows differences between the working directory and the last commit.
+
+git diff <branch1> <branch2>
+Compares two branches.
+
+git blame <file_name>
+Displays who last modified each line of a file.
+
+
+
+### Stash Changes
+
+git stash
+Temporarily stores uncommitted changes.
+
+git stash list
+Shows the list of stashes.
+
+git stash apply
+Applies the most recent stash without removing it from the stash list.
+
+
+
+### Undoing Changes
+
+git reset <file_name>
+Unstages a file but keeps its changes in the working directory.
+
+git reset --hard <commit_hash>
+Resets the working directory and index to a specific commit.
+
+git revert <commit_hash>
+Reverts a specific commit by creating a new commit.
+
+
+
+### Tagging
+
+git tag <tag_name>
+Creates a tag at the current commit.
+
+git push origin <tag_name>
+Pushes a specific tag to the remote repository.
+
+git tag -d <tag_name>
+Deletes a local tag.
+
+
+
+### Collaborating with Remotes
+
+git remote add origin <repository_url>
+Adds a remote repository URL.
+
+git push --set-upstream origin <branch_name>
+Sets the upstream branch for future pushes.
+
+
+
+### Cleaning Up
+
+git clean -f
+Removes untracked files from the working directory.
+
+git gc
+Optimizes the local repository by garbage collecting unnecessary files.
